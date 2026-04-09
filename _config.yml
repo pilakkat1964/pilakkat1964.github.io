@@ -19,3 +19,9 @@ plugins:
 
 # Build settings
 encoding: utf-8
+
+exclude:
+  - README.md
+  - SITE-DESIGN.md
+  - mise.toml
+  - tools/
