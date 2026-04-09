@@ -1,0 +1,21 @@
+title: "Santhosh Kumar Pilakkat"
+description: "Senior Systems Architect — 5G · SDR · IIoT · FPGA · Embedded Systems"
+url: "https://pilakkat.mywire.org"
+baseurl: ""
+theme: minima
+author: "Santhosh Kumar Pilakkat"
+email: "pilakkat1964@gmail.com"
+github_username: pilakkat1964
+
+header_pages:
+  - about.md
+
+minima:
+  skin: dark
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+encoding: utf-8
