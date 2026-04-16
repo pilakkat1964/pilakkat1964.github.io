@@ -1,0 +1,61 @@
+version: "1.0"
+
+# Portfolio definitions
+portfolios:
+  core:
+    description: "Main website + blog + CV"
+    type: "builtin"
+    projects:
+      - repo: "pilakkat1964/pilakkat1964.github.io"
+        name: "pilakkat1964.github.io"
+        language: "Ruby/Jekyll"
+      - repo: "pilakkat1964/blog"
+        name: "blog"
+        language: "Ruby/Jekyll"
+      - repo: "pilakkat1964/cv"
+        name: "cv"
+        language: "Ruby/Jekyll"
+
+  z-tools:
+    description: "Z-tools portfolio ecosystem"
+    type: "plugin"
+    plugin_path: "z-tools/portfolio-orchestrator.py"
+    projects:
+      - repo: "pilakkat1964/z-tools"
+        name: "z-tools"
+        language: "Ruby/Jekyll"
+        role: "lead"
+      - repo: "pilakkat1964/z-open"
+        name: "z-open"
+        language: "Python"
+      - repo: "pilakkat1964/z-edit"
+        name: "z-edit"
+        language: "Python"
+      - repo: "pilakkat1964/z-kitty-launcher"
+        name: "z-kitty-launcher"
+        language: "Rust"
+      - repo: "pilakkat1964/z-rclone-mount-applete"
+        name: "z-rclone-mount-applete"
+        language: "Rust"
+
+  others:
+    description: "Other portfolio projects"
+    type: "plugin"
+    plugin_path: "others/portfolio-orchestrator.py"
+    projects:
+      - repo: "pilakkat1964/LinearAlgebra-4-CV-DL"
+        name: "LinearAlgebra-4-CV-DL"
+        language: "Python"
+
+  all:
+    description: "All portfolios and projects"
+    type: "builtin"
+    includes: ["core", "z-tools", "others"]
+    projects: []
+
+# Global settings
+settings:
+  default_clone_path: "~/workspace/portfolio"
+  validate_links_on_push: false
+  default_git_branch: "main"
+  github_username: "pilakkat1964"

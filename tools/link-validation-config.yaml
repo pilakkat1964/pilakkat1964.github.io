@@ -1,0 +1,67 @@
+version: "1.0"
+
+profiles:
+  core:
+    description: "Validate main site + blog + CV links"
+    projects:
+      - pilakkat1964.github.io
+      - blog
+      - cv
+    rules:
+      - rule_id: "main_site_links"
+        pattern: "^/(?!blog|cv)"
+        scope: "pilakkat1964.github.io"
+        link_type: "internal"
+      - rule_id: "blog_links"
+        pattern: "^/blog"
+        scope: "blog"
+        link_type: "cross"
+      - rule_id: "cv_links"
+        pattern: "^/cv"
+        scope: "cv"
+        link_type: "cross"
+    behavior:
+      on_broken: "warn"
+      on_external: "skip"
+      auto_fix: false
+
+  z-tools:
+    description: "Validate z-tools portfolio"
+    projects:
+      - z-tools
+    rules:
+      - rule_id: "z-tools_links"
+        pattern: "^/z-tools"
+        scope: "z-tools"
+        link_type: "internal"
+    behavior:
+      on_broken: "warn"
+      on_external: "skip"
+      auto_fix: false
+
+  all:
+    description: "Validate all projects"
+    projects:
+      - pilakkat1964.github.io
+      - blog
+      - cv
+      - z-tools
+      - z-open
+      - z-edit
+      - z-kitty-launcher
+      - z-rclone-mount-applete
+      - LinearAlgebra-4-CV-DL
+    rules:
+      - rule_id: "any_internal"
+        pattern: ".*"
+        scope: ""
+        link_type: "internal"
+    behavior:
+      on_broken: "warn"
+      on_external: "skip"
+      auto_fix: false
+
+# Portfolio-specific overrides (optional)
+portfolio_overrides:
+  z-tools:
+    config_file: "z-tools/link-validation-config.yaml"
