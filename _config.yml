@@ -16,6 +16,7 @@ cv_url: "https://pilakkat.mywire.org/cv/"
 img_cdn: ""
 timezone: Asia/Kolkata
 lang: en
+avatar: /assets/images/profile.jpg
 
 # Comments (optional)
 comments:
