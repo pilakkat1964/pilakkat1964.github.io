@@ -7,6 +7,10 @@ author: "Santhosh Kumar Pilakkat"
 email: "pilakkat1964@gmail.com"
 github_username: pilakkat1964
 
+# External sections hosted in separate repositories
+blog_url: "https://pilakkat.mywire.org/blog/"
+cv_url: "https://pilakkat.mywire.org/cv/"
+
 header_pages:
   - about.md
 

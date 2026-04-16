@@ -20,5 +20,5 @@ I'm **Santhosh Kumar Pilakkat**, based in Singapore with 30+ years of experience
 
 ## This Site
 
-- [Blog](/blog/) — Technical posts on current projects and interests
-- [CV/Resume](/cv/) — Full professional background
+- [Blog]({{ site.blog_url }}) — Technical posts on current projects and interests
+- [CV/Resume]({{ site.cv_url }}) — Full professional background

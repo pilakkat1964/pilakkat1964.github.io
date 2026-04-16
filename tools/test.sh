@@ -135,7 +135,7 @@ main() {
   echo "> Running htmlproofer..."
   if bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^https:\/\/pilakkat.mywire.org\/(blog|cv)\//" \
     > "$HTMLPROOFER_OUTPUT" 2>&1; then
     echo "  ✓ All links validated"
   else
