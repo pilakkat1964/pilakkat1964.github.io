@@ -14,6 +14,14 @@ _config="_config.yml"
 
 _baseurl=""
 
+# Check if gems are installed and install if needed
+check_and_install_gems() {
+  if ! bundle check > /dev/null 2>&1; then
+    echo "> Required gems not found. Running 'bundle install'..."
+    bundle install
+  fi
+}
+
 help() {
   echo "Build and test the site content"
   echo
@@ -85,5 +93,7 @@ while (($#)); do
     ;;
   esac
 done
+
+check_and_install_gems
 
 main

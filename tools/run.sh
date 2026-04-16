@@ -2,6 +2,14 @@
 #
 # Run jekyll serve and then launch the site
 
+# Check if gems are installed and install if needed
+check_and_install_gems() {
+  if ! bundle check > /dev/null 2>&1; then
+    echo "> Required gems not found. Running 'bundle install'..."
+    bundle install
+  fi
+}
+
 prod=false
 command="bundle exec jekyll s -l"
 host="127.0.0.1"
@@ -49,6 +57,8 @@ fi
 if [ -e /proc/1/cgroup ] && grep -q docker /proc/1/cgroup; then
   command="$command --force_polling"
 fi
+
+check_and_install_gems
 
 echo -e "\n> $command\n"
 eval "$command"
