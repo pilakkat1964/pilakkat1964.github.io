@@ -24,4 +24,5 @@ exclude:
   - README.md
   - SITE-DESIGN.md
   - mise.toml
+  - AGENTS.md
   - tools/
