@@ -2,7 +2,7 @@ title: "Santhosh Kumar Pilakkat"
 description: "Senior Systems Architect — 5G · SDR · IIoT · FPGA · Embedded Systems"
 url: "https://pilakkat.mywire.org"
 baseurl: ""
-theme: minima
+theme: jekyll-theme-chirpy
 author: "Santhosh Kumar Pilakkat"
 email: "pilakkat1964@gmail.com"
 github_username: pilakkat1964
@@ -12,18 +12,41 @@ linkedin_username: pilakkat
 blog_url: "https://pilakkat.mywire.org/blog/"
 cv_url: "https://pilakkat.mywire.org/cv/"
 
-header_pages:
-  - about.md
+# Chirpy theme configuration
+img_cdn: ""
+timezone: Asia/Kolkata
+lang: en
 
-minima:
-  skin: dark
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Comments (optional)
+comments:
+  active: null
 
 # Build settings
 encoding: utf-8
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 exclude:
   - README.md
