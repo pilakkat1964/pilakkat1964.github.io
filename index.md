@@ -11,4 +11,4 @@ This site contains:
 - 📝 **[Blog]({{ site.blog_url }})** — Technical articles on 5G, SDR, IIoT, and embedded systems
 - 📄 **[CV/Resume]({{ site.cv_url }})** — Professional background and experience
 - 📧 **Email**: pilakkat1964@gmail.com
-- 🔗 **[GitHub](https://github.com/pilakkat1964)** | **[LinkedIn](https://linkedin.com/in/pilakkat)**
+- 🔗 **[GitHub](https://github.com/{{ site.github_username }})** | **[LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}/)**

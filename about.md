@@ -14,9 +14,9 @@ I'm **Santhosh Kumar Pilakkat**, based in Singapore with 30+ years of experience
 
 ## Professional Links
 
-- **GitHub**: [pilakkat1964](https://github.com/pilakkat1964)
-- **LinkedIn**: [pilakkat](https://linkedin.com/in/pilakkat)
-- **Email**: pilakkat1964@gmail.com
+- **GitHub**: [{{ site.github_username }}](https://github.com/{{ site.github_username }})
+- **LinkedIn**: [{{ site.linkedin_username }}](https://www.linkedin.com/in/{{ site.linkedin_username }}/)
+- **Email**: {{ site.email }}
 
 ## This Site
 
