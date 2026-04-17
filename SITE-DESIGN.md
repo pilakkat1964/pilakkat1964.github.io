@@ -2,7 +2,7 @@
 
 ## Overview
 
-Three GitHub repositories combine to serve the personal website of **Santhosh Kumar Pilakkat** at `https://pilakkat.mywire.org`.
+Multiple GitHub repositories combine to serve the personal website of **Santhosh Kumar Pilakkat** at `https://pilakkat.mywire.org`, including specialized portfolios (z-tools, misc-project), blog, CV, and project showcases.
 
 ## DNS Configuration
 
@@ -10,29 +10,59 @@ Three GitHub repositories combine to serve the personal website of **Santhosh Ku
 |--------|------|-------|
 | `pilakkat.mywire.org` | CNAME | `pilakkat1964.github.io` |
 
-Only **one** CNAME record is needed. The `/blog` and `/cv` paths are served by separate GitHub project repos automatically under the same custom domain.
+Only **one** CNAME record is needed. Multiple GitHub project repos are automatically served under the same custom domain at different paths (`/blog/`, `/z-tools/`, `/misc/`, etc.).
 
 ## Repositories
 
-| Repo | URL Path | Theme | Deploy Method |
-|------|----------|-------|---------------|
-| [pilakkat1964/pilakkat1964.github.io](https://github.com/pilakkat1964/pilakkat1964.github.io) | `/` | minima (dark) | GH Actions → deploy-pages |
-| [pilakkat1964/blog](https://github.com/pilakkat1964/blog) | `/blog/` | Chirpy | GH Actions → deploy-pages |
-| [pilakkat1964/cv](https://github.com/pilakkat1964/cv) | `/cv/` | online-cv | GH Pages (branch) |
+| Repo | URL Path | Type | Theme | Deploy Method |
+|------|----------|------|-------|---------------|
+| [pilakkat1964/pilakkat1964.github.io](https://github.com/pilakkat1964/pilakkat1964.github.io) | `/` | Main site | minima (dark) | GH Actions → deploy-pages |
+| [pilakkat1964/blog](https://github.com/pilakkat1964/blog) | `/blog/` | Blog | Chirpy | GH Actions → deploy-pages |
+| [pilakkat1964/z-tools](https://github.com/pilakkat1964/z-tools) | `/z-tools/` | Portfolio | Minimal Mistakes | GH Actions → deploy-pages |
+| [pilakkat1964/misc-project](https://github.com/pilakkat1964/misc-project) | `/misc/` | Portfolio | Minimal Mistakes | GH Actions → deploy-pages |
+| [pilakkat1964/cv](https://github.com/pilakkat1964/cv) | `/cv/` | CV | online-cv | GH Pages (branch) |
 
 ## Site Structure
 
 ```
 pilakkat.mywire.org/
-├── /                  → pilakkat1964.github.io repo (minima theme)
-│   ├── /about/        → About page
-│   └── /feed.xml      → RSS feed
-├── /blog/             → blog repo (Chirpy theme)
-│   ├── /blog/posts/   → Blog posts (markdown in _posts/)
-│   ├── /blog/tags/    → Tag archive
-│   └── /blog/categories/ → Category archive
-└── /cv/               → cv repo (online-cv theme)
-    └── /cv/print.html → Print-friendly CV
+├── /                        → pilakkat1964.github.io repo (main site)
+│   ├── /about/              → About page
+│   └── /feed.xml            → RSS feed
+│
+├── /z-tools/                → z-tools portfolio (Minimal Mistakes theme)
+│   ├── /z-tools/projects/   → Member projects showcase
+│   ├── /z-tools/posts/      → Blog posts
+│   └── /z-tools/docs/       → Documentation
+│
+├── /misc/                   → misc-project portfolio (Minimal Mistakes theme)
+│   ├── /misc/projects/      → Member projects (LinearAlgebra-4-CV-DL, etc)
+│   ├── /misc/posts/         → Blog posts
+│   └── /misc/docs/          → Documentation
+│
+├── /blog/                   → Blog repo (Chirpy theme)
+│   ├── /blog/posts/         → Blog posts (markdown in _posts/)
+│   ├── /blog/tags/          → Tag archive
+│   └── /blog/categories/    → Category archive
+│
+└── /cv/                     → CV repo (online-cv theme)
+    └── /cv/print.html       → Print-friendly CV
+```
+
+## Portfolio Hierarchy
+
+```
+Santhosh Kumar Pilakkat (Root: /)
+├── Z-Tools Portfolio (/z-tools/)
+│   ├── z-edit (/z-edit/)
+│   ├── z-open (/z-open/)
+│   ├── z-kitty-launcher (/z-kitty-launcher/)
+│   └── z-rclone-mount-applete (/z-rclone-mount-applete/)
+│
+├── Miscellaneous Projects (/misc/)
+│   └── LinearAlgebra-4-CV-DL (Educational Resource)
+│
+└── Blog (/blog/)
 ```
 
 ## Repository Details
@@ -45,11 +75,31 @@ pilakkat.mywire.org/
 - **CNAME**: `pilakkat.mywire.org` (this is the root — CNAME lives here)
 - **Deploy**: GitHub Actions workflow on push to `main`
 
+### Z-Tools Portfolio (`pilakkat1964/z-tools`)
+- **Theme**: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme
+- **`docs/_config.yml` key settings**:
+  - `url: "https://pilakkat.mywire.org"`
+  - `baseurl: "/z-tools"`
+- **Member Projects**: z-edit, z-open, z-kitty-launcher, z-rclone-mount-applete
+- **Deploy**: GitHub Actions on push to `main` (builds from `docs/` directory)
+- **Purpose**: Unified coordination hub for a suite of specialized Linux utilities
+
+### Miscellaneous Projects Portfolio (`pilakkat1964/misc-project`)
+- **Theme**: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme
+- **`docs/_config.yml` key settings**:
+  - `url: "https://pilakkat.mywire.org"`
+  - `baseurl: "/misc"`
+- **Member Projects**: LinearAlgebra-4-CV-DL (educational resource)
+- **Deploy**: GitHub Actions on push to `main` (builds from `docs/` directory)
+- **Purpose**: Collection of miscellaneous, experimental, and unrelated projects
+- **Status**: Active Development
+
 ### Blog (`pilakkat1964/blog`)
 - **Theme**: [jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
 - **`_config.yml` key settings**:
   - `url: "https://pilakkat.mywire.org"`
   - `baseurl: "/blog"`
+- **Navigation**: Includes `↑ Site Home` hierarchy navigation link
 - **No CNAME file** — served as a project page under the main domain
 - **Deploy**: GitHub Actions (`pages-deploy.yml`) on push to `main`
 - **Local dev**: Uses `mise` to pin Ruby 3.4.9
@@ -64,6 +114,27 @@ pilakkat.mywire.org/
 
 ## Local Development
 
+### Main Site
+```bash
+cd pilakkat1964.github.io/
+bundle install
+bundle exec jekyll serve
+```
+
+### Z-Tools Portfolio
+```bash
+cd z-tools/docs/
+bundle install
+bundle exec jekyll serve --baseurl /z-tools
+```
+
+### Miscellaneous Projects Portfolio
+```bash
+cd misc-project/docs/
+bundle install
+bundle exec jekyll serve --baseurl /misc
+```
+
 ### Blog
 ```bash
 cd blog/
@@ -76,13 +147,6 @@ bundle exec jekyll serve --baseurl /blog
 cd cv/
 bundle install
 bundle exec jekyll serve --baseurl /cv
-```
-
-### Main Site
-```bash
-cd pilakkat1964.github.io/
-bundle install
-bundle exec jekyll serve
 ```
 
 ## mise.toml (Blog)
