@@ -254,7 +254,7 @@ External links starting with `http://` or `https://` are intentionally skipped.
 
 To validate external links, use a separate tool like `linkchecker`:
 ```bash
-linkchecker https://pilakkat.mywire.org
+linkchecker https://pilakkat1964.mywire.org
 ```
 
 ## Advanced Usage

@@ -1,8 +1,8 @@
-# Site Development Guide — pilakkat.mywire.org
+# Site Development Guide — pilakkat1964.mywire.org
 
 ## Overview
 
-This guide is for developers adding features, fixing bugs, or extending the pilakkat.mywire.org website. It covers the development environment setup, architecture details, testing, and deployment procedures.
+This guide is for developers adding features, fixing bugs, or extending the pilakkat1964.mywire.org website. It covers the development environment setup, architecture details, testing, and deployment procedures.
 
 ## Development Environment
 
@@ -535,7 +535,7 @@ git push --force-with-lease origin main
 2. Push to GitHub: `git push origin main`
 3. GitHub Actions triggers automatically
 4. Build completes (2-5 minutes)
-5. Site updates at: `https://pilakkat.mywire.org/blog/`
+5. Site updates at: `https://pilakkat1964.mywire.org/blog/`
 
 **No manual deployment needed** — fully automated!
 

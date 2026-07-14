@@ -1,14 +1,14 @@
-# Site Design — pilakkat.mywire.org
+# Site Design — pilakkat1964.mywire.org
 
 ## Overview
 
-Multiple GitHub repositories combine to serve the personal website of **Santhosh Kumar Pilakkat** at `https://pilakkat.mywire.org`, including specialized portfolios (z-tools, misc-project), blog, CV, and project showcases.
+Multiple GitHub repositories combine to serve the personal website of **Santhosh Kumar Pilakkat** at `https://pilakkat1964.mywire.org`, including specialized portfolios (z-tools, misc-project), blog, CV, and project showcases.
 
 ## DNS Configuration
 
 | Record | Type | Value |
 |--------|------|-------|
-| `pilakkat.mywire.org` | CNAME | `pilakkat1964.github.io` |
+| `pilakkat1964.mywire.org` | CNAME | `pilakkat1964.github.io` |
 
 Only **one** CNAME record is needed. Multiple GitHub project repos are automatically served under the same custom domain at different paths (`/blog/`, `/z-tools/`, `/misc/`, etc.).
 
@@ -25,7 +25,7 @@ Only **one** CNAME record is needed. Multiple GitHub project repos are automatic
 ## Site Structure
 
 ```
-pilakkat.mywire.org/
+pilakkat1964.mywire.org/
 ├── /                        → pilakkat1964.github.io repo (main site)
 │   ├── /about/              → About page
 │   └── /feed.xml            → RSS feed
@@ -70,15 +70,15 @@ Santhosh Kumar Pilakkat (Root: /)
 ### Main Site (`pilakkat1964.github.io`)
 - **Theme**: minima 2.5 (dark skin)
 - **`_config.yml` key settings**:
-  - `url: "https://pilakkat.mywire.org"`
+  - `url: "https://pilakkat1964.mywire.org"`
   - `baseurl: ""`
-- **CNAME**: `pilakkat.mywire.org` (this is the root — CNAME lives here)
+- **CNAME**: `pilakkat1964.mywire.org` (this is the root — CNAME lives here)
 - **Deploy**: GitHub Actions workflow on push to `main`
 
 ### Z-Tools Portfolio (`pilakkat1964/z-tools`)
 - **Theme**: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme
 - **`docs/_config.yml` key settings**:
-  - `url: "https://pilakkat.mywire.org"`
+  - `url: "https://pilakkat1964.mywire.org"`
   - `baseurl: "/z-tools"`
 - **Member Projects**: z-edit, z-open, z-kitty-launcher, z-rclone-mount-applete
 - **Deploy**: GitHub Actions on push to `main` (builds from `docs/` directory)
@@ -87,7 +87,7 @@ Santhosh Kumar Pilakkat (Root: /)
 ### Miscellaneous Projects Portfolio (`pilakkat1964/misc-project`)
 - **Theme**: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme
 - **`docs/_config.yml` key settings**:
-  - `url: "https://pilakkat.mywire.org"`
+  - `url: "https://pilakkat1964.mywire.org"`
   - `baseurl: "/misc"`
 - **Member Projects**: LinearAlgebra-4-CV-DL (educational resource)
 - **Deploy**: GitHub Actions on push to `main` (builds from `docs/` directory)
@@ -97,7 +97,7 @@ Santhosh Kumar Pilakkat (Root: /)
 ### Blog (`pilakkat1964/blog`)
 - **Theme**: [jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
 - **`_config.yml` key settings**:
-  - `url: "https://pilakkat.mywire.org"`
+  - `url: "https://pilakkat1964.mywire.org"`
   - `baseurl: "/blog"`
 - **Navigation**: Includes `↑ Site Home` hierarchy navigation link
 - **No CNAME file** — served as a project page under the main domain
@@ -107,7 +107,7 @@ Santhosh Kumar Pilakkat (Root: /)
 ### CV (`pilakkat1964/cv`)
 - **Theme**: [online-cv](https://github.com/sharu725/online-cv)
 - **`_config.yml` key settings**:
-  - `url: "https://pilakkat.mywire.org"`
+  - `url: "https://pilakkat1964.mywire.org"`
   - `baseurl: "/cv"`
 - **No CNAME file** — served as a project page under the main domain
 - **Deploy**: GitHub Pages built-in (from `master` branch, Jekyll auto-build)
@@ -180,7 +180,7 @@ Post content here.
 
 ### Issue: Blog Site Not Rendering (April 2026)
 
-**Problem**: After synchronizing Ruby versions across all three repos, the blog site at `https://pilakkat.mywire.org/blog/` failed to render. GitHub Actions workflow succeeded locally but deployment failed.
+**Problem**: After synchronizing Ruby versions across all three repos, the blog site at `https://pilakkat1964.mywire.org/blog/` failed to render. GitHub Actions workflow succeeded locally but deployment failed.
 
 **Symptoms**:
 1. `./tools/check-links.py --htmlproofer` reported 1353 unresolved links
@@ -222,6 +222,6 @@ Post content here.
 **For project page repos** (blog, cv):
 - Always set `submodules: true` in the GitHub Actions checkout if using git submodules for theme assets
 - Keep `_config.yml` settings synchronized:
-  - `url` should point to the main domain (e.g., `https://pilakkat.mywire.org`)
+  - `url` should point to the main domain (e.g., `https://pilakkat1964.mywire.org`)
   - `baseurl` should reflect the project path (e.g., `/blog`)
 - Use Ruby version pins in both `Gemfile` and `mise.toml` for consistency across local and CI environments

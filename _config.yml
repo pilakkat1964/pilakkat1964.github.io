@@ -1,6 +1,6 @@
 title: "Santhosh Kumar Pilakkat"
 description: "Senior Systems Architect — 5G · SDR · IIoT · FPGA · Embedded Systems"
-url: "https://pilakkat.mywire.org"
+url: "https://pilakkat1964.mywire.org"
 baseurl: ""
 theme: jekyll-theme-chirpy
 author: "Santhosh Kumar Pilakkat"
@@ -9,8 +9,8 @@ github_username: pilakkat1964
 linkedin_username: pilakkat
 
 # External sections hosted in separate repositories
-blog_url: "https://pilakkat.mywire.org/blog/"
-cv_url: "https://pilakkat.mywire.org/cv/"
+blog_url: "https://pilakkat1964.mywire.org/blog/"
+cv_url: "https://pilakkat1964.mywire.org/cv/"
 
 # Chirpy theme configuration
 img_cdn: ""

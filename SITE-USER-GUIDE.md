@@ -1,8 +1,8 @@
-# Site User Guide — pilakkat.mywire.org
+# Site User Guide — pilakkat1964.mywire.org
 
 ## Overview
 
-This guide explains how to navigate and use the **pilakkat.mywire.org** website, which combines three Jekyll-based sites under one domain:
+This guide explains how to navigate and use the **pilakkat1964.mywire.org** website, which combines three Jekyll-based sites under one domain:
 - **Main Portfolio** (root `/`)
 - **Tech Blog** (`/blog/`)
 - **CV** (`/cv/`)
@@ -14,7 +14,7 @@ This guide explains how to navigate and use the **pilakkat.mywire.org** website,
 The website implements a **hierarchical navigation system** to help users understand where they are and move between different sections:
 
 ```
-pilakkat.mywire.org (Root - Main Portfolio)
+pilakkat1964.mywire.org (Root - Main Portfolio)
 ├── /blog/ (Tech Blog)
 └── /cv/ (CV/Resume)
 ```
@@ -75,7 +75,7 @@ Example styling (Chirpy blog):
 
 ## Site Sections
 
-### Main Portfolio (`https://pilakkat.mywire.org/`)
+### Main Portfolio (`https://pilakkat1964.mywire.org/`)
 
 **Theme**: minima (dark skin)
 
@@ -89,9 +89,9 @@ Example styling (Chirpy blog):
 - Top navigation bar with links to Blog, CV, About
 - Footer with social media links
 
-**URL**: `https://pilakkat.mywire.org/`
+**URL**: `https://pilakkat1964.mywire.org/`
 
-### Tech Blog (`https://pilakkat.mywire.org/blog/`)
+### Tech Blog (`https://pilakkat1964.mywire.org/blog/`)
 
 **Theme**: Chirpy (modern, responsive)
 
@@ -115,7 +115,7 @@ Example styling (Chirpy blog):
 - **Post sharing**: Via social media (if enabled)
 - **Comments**: If enabled per post
 
-**URL**: `https://pilakkat.mywire.org/blog/`
+**URL**: `https://pilakkat1964.mywire.org/blog/`
 
 **Recent Posts**: View the latest posts on the homepage
 
@@ -125,7 +125,7 @@ Example styling (Chirpy blog):
 
 **Archive**: Click "ARCHIVES" to see posts by date
 
-### CV (`https://pilakkat.mywire.org/cv/`)
+### CV (`https://pilakkat1964.mywire.org/cv/`)
 
 **Theme**: online-cv
 
@@ -136,7 +136,7 @@ Example styling (Chirpy blog):
 - Education
 - Print-friendly format
 
-**URL**: `https://pilakkat.mywire.org/cv/`
+**URL**: `https://pilakkat1964.mywire.org/cv/`
 
 **Print**: Use browser print function or click "Print" button
 
@@ -166,7 +166,7 @@ Links to social media profiles:
 ### RSS Feed
 
 Subscribe to blog updates:
-- **Feed URL**: `https://pilakkat.mywire.org/blog/feed.xml`
+- **Feed URL**: `https://pilakkat1964.mywire.org/blog/feed.xml`
 - **Use**: Add to your RSS reader (Feedly, Inoreader, etc.)
 
 ## Mobile Experience
@@ -205,7 +205,7 @@ All sites are fully responsive:
 
 ### Navigation Links Not Working
 
-1. **Verify URL**: Check if you're on the correct domain (`pilakkat.mywire.org`)
+1. **Verify URL**: Check if you're on the correct domain (`pilakkat1964.mywire.org`)
 2. **Clear cookies**: Clear site data and try again
 3. **Try direct URL**: Type the URL directly in address bar
 

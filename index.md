@@ -12,8 +12,8 @@ This site contains:
 - 📝 **[Blog]({{ site.blog_url }})** — Technical articles on 5G, SDR, IIoT, and embedded systems
 - 📄 **[CV/Resume]({{ site.cv_url }})** — Professional background and experience
 - 📦 **Project Portfolios** — Curated collections of projects by domain
-  - 🛠️ **[Z-Tools](https://pilakkat1964.github.io/z-tools/)** — Systems utilities and tools
-  - 🗂️ **[Miscellaneous Projects](https://pilakkat1964.github.io/misc-project/)** — Experimental and educational projects
+  - 🛠️ **[Z-Tools](https://pilakkat1964.mywire.org/z-tools/)** — Systems utilities and tools
+  - 🗂️ **[Miscellaneous Projects](https://pilakkat1964.mywire.org/misc-project/)** — Experimental and educational projects
   - 🎓 **Others** — Additional projects (coming soon)
 - 📧 **Email**: pilakkat1964@gmail.com
 - 🔗 **[GitHub](https://github.com/{{ site.github_username }})** | **[LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}/)**

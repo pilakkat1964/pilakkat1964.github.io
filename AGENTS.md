@@ -10,7 +10,7 @@ Analyzed the project structure and modified build scripts to improve developer e
 
 ### 1. Project Analysis (Complete)
 - Analyzed multi-repository Jekyll site architecture
-- Identified three separate repos unified under `pilakkat.mywire.org`:
+- Identified three separate repos unified under `pilakkat1964.mywire.org`:
   - `pilakkat1964.github.io` (main site)
   - `pilakkat1964/blog` (technical blog)
   - `pilakkat1964/cv` (resume/CV)

@@ -233,7 +233,7 @@ This navigation scheme is flexible and works for portfolios of any size:
 ## Example Implementations
 
 ### Z-Tools Portfolio (Production)
-- **Portfolio**: https://pilakkat.mywire.org/z-tools/
+- **Portfolio**: https://pilakkat1964.mywire.org/z-tools/
 - **Projects**: z-edit, z-open, z-kitty-launcher, z-rclone-mount-applete
 - **Status**: ✅ Implemented and working
 - **Theme**: Minimal Mistakes (portfolio), Architect (projects)

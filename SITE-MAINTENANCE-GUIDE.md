@@ -1,8 +1,8 @@
-# Site Maintenance Guide — pilakkat.mywire.org
+# Site Maintenance Guide — pilakkat1964.mywire.org
 
 ## Overview
 
-This guide covers day-to-day maintenance tasks for the pilakkat.mywire.org website, including updating content, managing navigation, monitoring site health, and troubleshooting common issues.
+This guide covers day-to-day maintenance tasks for the pilakkat1964.mywire.org website, including updating content, managing navigation, monitoring site health, and troubleshooting common issues.
 
 ## Quick Reference
 
@@ -12,7 +12,7 @@ This guide covers day-to-day maintenance tasks for the pilakkat.mywire.org websi
 | Update CV | `pilakkat1964/cv` | Varies by theme | As needed |
 | Update portfolio | `pilakkat1964.github.io` | `index.md`, `about.md` | As needed |
 | Monitor build status | All three repos | `.github/workflows/` | Post-push |
-| Check deployment | Live site | `https://pilakkat.mywire.org` | Post-build |
+| Check deployment | Live site | `https://pilakkat1964.mywire.org` | Post-build |
 | Update navigation | Blog repo | `_layouts/home.html` | When structure changes |
 
 ## Managing Content
@@ -236,13 +236,13 @@ See [CV README](https://github.com/pilakkat1964/cv/blob/master/README.md) for de
 
 **For blog** (`pilakkat1964/blog`):
 - Deploys to: `https://pilakkat1964.github.io/blog/`
-- Custom domain: `https://pilakkat.mywire.org/blog/`
+- Custom domain: `https://pilakkat1964.mywire.org/blog/`
 
 ### Live Site Testing
 
 **Checklist**:
-- [ ] Homepage loads: `https://pilakkat.mywire.org/`
-- [ ] Blog loads: `https://pilakkat.mywire.org/blog/`
+- [ ] Homepage loads: `https://pilakkat1964.mywire.org/`
+- [ ] Blog loads: `https://pilakkat1964.mywire.org/blog/`
 - [ ] Latest post visible on blog homepage
 - [ ] Blog post can be opened by clicking title
 - [ ] Navigation links work (↑ Site Home)
@@ -256,9 +256,9 @@ See [CV README](https://github.com/pilakkat1964/cv/blob/master/README.md) for de
 ```bash
 #!/bin/bash
 echo "Testing site..."
-curl -s https://pilakkat.mywire.org/ | grep -q "title" && echo "✅ Main site OK" || echo "❌ Main site ERROR"
-curl -s https://pilakkat.mywire.org/blog/ | grep -q "hierarchy-nav" && echo "✅ Blog nav OK" || echo "❌ Blog nav ERROR"
-curl -s https://pilakkat.mywire.org/blog/ | grep -q "post-list" && echo "✅ Blog posts OK" || echo "❌ Blog posts ERROR"
+curl -s https://pilakkat1964.mywire.org/ | grep -q "title" && echo "✅ Main site OK" || echo "❌ Main site ERROR"
+curl -s https://pilakkat1964.mywire.org/blog/ | grep -q "hierarchy-nav" && echo "✅ Blog nav OK" || echo "❌ Blog nav ERROR"
+curl -s https://pilakkat1964.mywire.org/blog/ | grep -q "post-list" && echo "✅ Blog posts OK" || echo "❌ Blog posts ERROR"
 ```
 
 ### Monitoring Performance
@@ -282,9 +282,9 @@ curl -s https://pilakkat.mywire.org/blog/ | grep -q "post-list" && echo "✅ Blo
 
 **Recommended checks**:
 ```
-GET https://pilakkat.mywire.org/ → expect 200
-GET https://pilakkat.mywire.org/blog/ → expect 200
-GET https://pilakkat.mywire.org/blog/feed.xml → expect 200
+GET https://pilakkat1964.mywire.org/ → expect 200
+GET https://pilakkat1964.mywire.org/blog/ → expect 200
+GET https://pilakkat1964.mywire.org/blog/feed.xml → expect 200
 ```
 
 ## Common Maintenance Tasks
@@ -316,7 +316,7 @@ GET https://pilakkat.mywire.org/blog/feed.xml → expect 200
 2. Set up Jekyll with desired theme
 3. In `_config.yml`:
    ```yaml
-   url: "https://pilakkat.mywire.org"
+   url: "https://pilakkat1964.mywire.org"
    baseurl: "/projects"
    ```
 4. Set up GitHub Actions for deployment
